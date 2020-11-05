@@ -7,4 +7,5 @@ import java.util.List;
 
 public interface HyperlinkRepository extends JpaRepository<Hyperlink, Long> {
     List<Hyperlink> findByDemandCode(String demandCode);
+
 }

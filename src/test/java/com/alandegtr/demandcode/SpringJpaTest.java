@@ -2,7 +2,7 @@ package com.alandegtr.demandcode;
 
 import com.alandegtr.demandcode.dao.HyperlinkRepository;
 import com.alandegtr.demandcode.po.Hyperlink;
-import com.alandegtr.demandcode.util.demandCodeUtil;
+import com.alandegtr.demandcode.service.HyperlinkService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -13,6 +13,8 @@ import java.util.List;
 public class SpringJpaTest {
     @Autowired
     private HyperlinkRepository hyperlinkRepository;
+    @Autowired
+    private HyperlinkService hyperlinkService;
 
     @Test
     public void findAllTest() {
@@ -41,7 +43,8 @@ public class SpringJpaTest {
     }
 
     @Test
-    public void generateTest(){
-        System.out.println(demandCodeUtil.generateDemandCode());
+    public void generateTest() {
+        String demandCode = hyperlinkService.generationDemandCode();
+        System.out.println(demandCode);
     }
 }

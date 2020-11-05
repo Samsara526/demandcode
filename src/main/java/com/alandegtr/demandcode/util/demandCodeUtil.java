@@ -1,8 +1,8 @@
 package com.alandegtr.demandcode.util;
 
 public class demandCodeUtil {
-    public static String generateDemandCode() {
-        String demandCode = "";
+    public static String randomDemandCode() {
+        StringBuilder demandCode = new StringBuilder();
         for (int i = 0; i < 8; i++) {
             char temp = 0;
             int key = (int) (Math.random() * 2);
@@ -16,8 +16,8 @@ public class demandCodeUtil {
                 default:
                     break;
             }
-            demandCode = demandCode + temp;
+            demandCode.append(temp);
         }
-        return demandCode;
+        return demandCode.toString();
     }
 }
