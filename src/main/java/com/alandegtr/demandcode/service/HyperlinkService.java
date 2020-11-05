@@ -12,7 +12,7 @@ public class HyperlinkService {
 
     public String generationDemandCode() {
         String demandCode = demandCodeUtil.randomDemandCode();
-        while (!hyperlinkRepository.findByDemandCode(demandCode).isEmpty()) {
+        while (hyperlinkRepository.findByDemandCode(demandCode) != null) {
             demandCode = demandCodeUtil.randomDemandCode();
         }
         return demandCode;

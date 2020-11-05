@@ -26,10 +26,8 @@ public class SpringJpaTest {
 
     @Test
     public void findByDemandCodeTest() {
-        List<Hyperlink> hyperlinks = hyperlinkRepository.findByDemandCode("2D2C18DE");
-        for (Hyperlink hyperlink : hyperlinks) {
-            System.out.println(hyperlink);
-        }
+        Hyperlink hyperlink = hyperlinkRepository.findByDemandCode("2D2C18DE");
+        System.out.println(hyperlink);
     }
 
     @Test
