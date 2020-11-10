@@ -1,8 +1,21 @@
+#spring:
+#  datasource:
+#    url: jdbc:mysql://localhost/alan_demandcode?serverTimezone=Asia/Shanghai
+#    username: root
+#    password: 19986201212
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#  jpa:
+#    hibernate:
+#      ddl-auto: update # 数据库没有表时自动构建，
+#    database: mysql # 指定数据库类型
+#    generate-ddl: true # 自动生成
+#    show-sql: true # 现实sql到控制台
+#    database-platform: org.hibernate.dialect.MySQL8Dialect
 spring:
   datasource:
-    url: jdbc:mysql://localhost/alan_demandcode?serverTimezone=Asia/Shanghai
-    username: root
-    password: 19986201212
+    url: jdbc:mysql://159.138.156.9/alan_admin?serverTimezone=Asia/Shanghai
+    username: alan_admin
+    password: xuezhentian.
     driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     hibernate:

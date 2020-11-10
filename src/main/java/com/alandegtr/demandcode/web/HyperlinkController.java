@@ -15,7 +15,7 @@ public class HyperlinkController {
         this.hyperlinkRepository = hyperlinkRepository;
     }
 
-    @PostMapping(value = "/search")
+    @PostMapping(value = "search")
     public Hyperlink search(@RequestBody String demandCode) {
         System.out.println(demandCode);
         return hyperlinkRepository.findByDemandCode(demandCode);
