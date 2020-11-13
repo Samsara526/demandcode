@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.alandegtr</groupId>
     <artifactId>demandcode</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.2-SNAPSHOT</version>
     <name>demandcode</name>
     <description>AlandeGTR网站查询码应用</description>
 
